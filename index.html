@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Voyages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="title">Velvet Voyages</a>
+        <nav class="nav_primary">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="#" class="nav_link">Destinations</a></li>
+                <li class="nav_li tour_types_li">
+                    <a href="#" class="nav_link">Tour Types</a>
+                    <svg class="chevron_down" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <ul class="tour_types_ul">
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Honeymoon</a></li>
+                        <li><a href="#">Family-Friendly</a></li>
+                        <li><a href="#">Day Tours</a></li>
+                        <li><a href="#">To-Lost-In-Nature</a></li>
+                    </ul>
+                </li>
+                <li class="nav_li"><a href="#" class="nav_link">Special Offers</a></li>
+                <li class="nav_li"><a href="#" class="nav_link">About Us</a></li>
+                <li class="nav_li"><a href="#" class="nav_link">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="nav_utility">
+            <button class="book_now">Book Now</button>
+            <div class="search_container">
+                <button class="search_btn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <input class="search" type="search" placeholder="Search">
+            </div>
+            <!-- <select name="lang" id="lang">
+                <option value="en">EN</option>
+            </select> -->
+            <a href="login.html">
+                <button href="login.html" class="login_btn">Log In</button>
+            </a>
+        </nav>
+    </header>
+
+    <!--        HERO SECTION     -->
+
+    <section class="section_hero">
+        <div class="hero_text">
+            <h2>Leave the Planning, Take the Memories</h2>
+            <h4>Expertly curated all-inclusive packages designed to take the stress out of your next great escape</h4>
+            <button>Start Exploring</button>
+        </div>
+    </section>
+
+    <hr>
+    <!--        CARDS SECTION       -->
+    <h1 class="card_section_title">different worlds, one horizon</h1>
+    <section class="section_cards">
+        <div class="card_container">
+            <div class="card">
+                <div class="card_front">
+                    <figure><img src="img/adventurous.jpg" alt=""></figure>
+                    <div class="text">
+                        <h3>Adventurous Tours</h3>
+                        <p>Energy, adrenaline, and challenge</p>
+                        <ul>
+                            <li>Off-Road Expeditions</li>
+                            <li>Peak Conquests</li>
+                            <li>Rapid Descents</li>
+                            <li>Survival Skills</li>
+                            <li>Extreme Logistics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_back">
+                    <button class="book">Book</button>
+                    <p>$1950</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_front">
+                    <figure><img src="img/honeymoon.jpg" alt=""></figure>
+                    <div class="text">
+                        <h3>Honeymoon Packages</h3>
+                        <p>Intimacy, luxury, and 'wow' moments</p>
+                        <ul>
+                            <li>Secret Sanctuaries</li>
+                            <li>Candlelit Expeditions</li>
+                            <li>Couples' Wellness</li>
+                            <li>Chauffeur-Driven Tours</li>
+                            <li>Champagne Sunsets</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_back">
+                    <button class="book">Book</button>
+                    <p>$2850</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card_front">
+                    <figure><img src="img/solitude.jpg" alt=""></figure>
+                    <div class="text">
+                        <h3>Lost-in-Nature Escapes</h3>
+                        <p>Silence, disconnection, and raw beauty</p>
+                        <ul>
+                            <li>Digital Detox Zones</li>
+                            <li>Eco-Luxe Cabins</li>
+                            <li>Wildlife Tracking</li>
+                            <li>Celestial Maps</li>
+                            <li>Foraging & Fire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_back">
+                    <button class="book">Book</button>
+                    <p>$1650</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--        TESTIMONIALS SECTION-->
+
+    <section class="section_testimonials">
+        <div class="testimonials_container">
+            <div class="testimonial melinda">
+                <figure><img src="img/testimonials/melinda.jfif" alt=""></figure>
+                <div class="text">
+                    <p>"We wanted something more than a beach chair. The <strong>Secret Sanctuaries</strong> package
+                        gave us moments we couldn't have planned ourselves—like a private dinner under a waterfall.
+                        Seamless, romantic, and truly unforgettable."</p>
+                    <h6>—Melinda L.</h6>
+                </div>
+            </div>
+            <div class="testimonial john">
+                <figure><img src="img/testimonials/john.jfif" alt=""></figure>
+                <div class="text">
+                    <p>"I've trekked all over, but this was different. The <strong>Off-Road Expedition</strong> pushed
+                        me to my limits,
+                        yet I felt completely safe with their expert guides. It wasn't just a tour; it was a total
+                        adrenaline reset."</p>
+                    <h6>—John T.</h6>
+                </div>
+            </div>
+            <div class="testimonial rieze">
+                <figure><img src="img/testimonials/Rieza.jpg" alt=""></figure>
+                <div class="text">
+                    <p>"The <strong>Lost-in-Nature</strong> escape was exactly what my soul needed. No pings, no
+                        emails—just the sound of the forest and the most incredible stargazing I've ever seen. I came
+                        home feeling like a new person."</p>
+                    <h6>—Rieze R.</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--        FOOTER      -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_left">
+                <h3 class="title_footer">Velvet Voyages</h3>
+                <div class="social">
+                    <img src="img/social/facebook-svgrepo-com (1).svg" alt="facebook">
+                    <img src="img/social/instagram-svgrepo-com (1).svg" alt="Instagram">
+                    <img src="img/social/linkedin-svgrepo-com.svg" alt="Linkedin">
+                    <img src="img/social/whatsapp-svgrepo-com (1).svg" alt="Whatsapp">
+                </div>
+                <form action="" class="footer_form">
+                    <label for="newsletter">Sign up for Newsletters:</label>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="footer_right">
+                <ul class="footer_ul">
+                    <li><a href="#" class="footer_link">Support & FAQs</a></li>
+                    <li><a href="#" class="footer_link">Policies</a></li>
+                    <li><a href="#" class="footer_link">Travel Blog</a></li>
+                    <li><a href="#" class="footer_link">Reviews</a></li>
+
+                </ul>
+                <p>NOTE: CARD IMAGES DESIGNED BY <a href="https://www.freepik.com">Freepik</a></p>
+
+                <span>&copy; 2026 All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
