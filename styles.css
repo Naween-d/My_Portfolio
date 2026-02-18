@@ -15,6 +15,14 @@
 html {
     font-size: 62.5%;
     scrollbar-gutter: stable;
+
+    @media (max-width:900px) {
+        font-size: 56.25%;
+    }
+
+    @media (max-width:600px) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -41,11 +49,30 @@ body {
     align-items: center;
     background-color: #f9f9f9;
     z-index: 10;
+    position: relative;
 
     & svg {
         width: 24px;
         height: 24px;
     }
+
+    & .tour_types_li img{
+        width: 1.4rem;
+        height: 1.4rem;
+        display: none;
+        margin-left: auto;
+    }
+}
+
+.title_header_out_container {
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.title_header_out {
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 .title {
@@ -173,8 +200,8 @@ body {
 .search {
     position: absolute;
     top: 140%;
-    left: -450%;
-    width: 30rem;
+    right: 0%;
+    width: 35rem;
     height: 4rem;
     padding-inline-start: 1rem;
     font-size: inherit;
@@ -283,6 +310,7 @@ hr {
 .card_container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
@@ -439,6 +467,13 @@ hr {
 
     & p {
         font-size: 1.6rem;
+    }
+
+    & span {
+        position: absolute;
+        top: -15%;
+        right: 30%;
+        font-style: italic;
     }
 }
 
@@ -799,8 +834,8 @@ hr {
 .svg_visible_signup,
 .svg_visible_off_signup,
 .svg_visible_off_signup_re,
-.svg_visible_signup_re{
-     cursor: pointer;
+.svg_visible_signup_re {
+    cursor: pointer;
     width: 3.5rem;
     height: 3.5rem;
     padding: 5px;
@@ -817,16 +852,17 @@ hr {
 }
 
 .svg_visible_off_signup,
-.svg_visible_off_signup_re{
- display: none;
+.svg_visible_off_signup_re {
+    display: none;
 }
+
 .svg_visible_off_signup.active,
-.svg_visible_off_signup_re.active{
- display: inline-block;
+.svg_visible_off_signup_re.active {
+    display: inline-block;
 }
 
 .svg_visible_signup.active,
-.svg_visible_signup_re.active{
+.svg_visible_signup_re.active {
     display: none;
 }
 
@@ -850,5 +886,166 @@ hr {
 
     100% {
         background-image: linear-gradient(to right, #233436, 50% #1E4445, #1E4445);
+    }
+}
+
+.hamburger {
+    /* position: absolute;
+    left: 2rem; */
+    width: 5rem;
+    height: 5rem;
+    /* padding: 1rem; */
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    place-items: center;
+    cursor: pointer;
+}
+
+.hamburger svg {
+    width: 4rem;
+    height: 4rem;
+
+}
+
+/*      MEDIA QUERIES       */
+
+@media (max-width:1090px) {
+
+    .hamburger {
+        display: grid;
+    }
+
+    .header {
+        justify-content: flex-start;
+        height: 8rem;
+    }
+
+    .header .title {
+        margin-left: 2rem;
+    }
+
+    .header .nav_primary {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #f9f9f9;
+        width: 30rem;
+        align-items: flex-start;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-5px);
+        transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .header .nav_primary.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .header .nav_primary .nav_ul {
+        flex-direction: column;
+
+    }
+
+    .header .nav_primary .nav_ul li {
+        padding-left: 3rem;
+    }
+
+    .header .nav_primary .nav_ul .tour_types_ul {
+        width: 30rem;
+        left: 100%;
+        top: 0rem;
+    }
+
+    .header .nav_primary .nav_ul .tour_types_ul li {
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+    .header .nav_primary .nav_ul .tour_types_li {
+        justify-content: flex-start;
+
+    }
+
+    .header .tour_types_li svg{
+        display: none;
+    }
+
+    .header .tour_types_li img{
+        display: inline ;
+    }
+
+    .nav_utility {
+        /* flex-direction: column; */
+        position: relative;
+        gap: 2rem;
+        margin-left: auto;
+        /* align-items: center; */
+    }
+
+    .search_container {
+        /* position: absolute; */
+        top: 110%;
+    }
+
+    .search_container .search {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+}
+
+@media (max-width:570px) {
+
+    .title_header_out_container {
+        display: block;
+    }
+
+    .title_header_in {
+        display: none;
+    }
+
+    .search {
+        width: 90vw;
+        top: 160%;
+    }
+
+     .header .nav_primary .nav_ul .tour_types_ul {
+        width: 30rem;
+        left: 0;
+        top: 100%;
+        background-color: #eee;
+    }
+
+     .header .tour_types_li svg{
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .header .tour_types_li img{
+        display: none ;
+    }
+
+    .footer_left form input {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:490px) {
+    .testimonial {
+        width: 90%;
+    }
+}
+
+@media (max-width:370px) {
+    .testimonials_container {
+        row-gap: 13rem;
     }
 }
