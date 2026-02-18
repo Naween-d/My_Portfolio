@@ -33,3 +33,32 @@ tourTypeLi.addEventListener('mouseleave', (e) => {
     chevronDown.classList.remove('active');
 })
 
+
+const navPrimary = document.querySelector('.nav_primary');
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+    navPrimary.classList.toggle('active')
+})
+
+document.addEventListener('keydown',(e)=>{
+    if(e.key === 'Escape' && navPrimary.classList.contains('active')){
+        navPrimary.classList.remove('active')
+    }
+})
+
+
+const mediaWatcher = window.matchMedia("(max-width:870px)");
+
+function handleMediaQueryChange(event) {
+    if (event.matches) {
+        searchBtn.removeEventListener('click', (e) => {
+            search.classList.toggle('active')
+        })
+    }
+    else { console.log('did not match') }
+
+}
+
+mediaWatcher.addEventListener('change', handleMediaQueryChange
+)
