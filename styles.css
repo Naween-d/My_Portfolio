@@ -64,17 +64,6 @@ body {
     }
 }
 
-.title_header_out_container {
-    background-color: #f9f9f9;
-    display: none;
-}
-
-.title_header_out {
-    display: block;
-    text-align: center;
-    padding: 2rem 0;
-}
-
 .title {
     text-align: center;
     font-size: 3rem;
@@ -85,6 +74,18 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+.title_header_out_container {
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.title_header_out {
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+    font-size:5rem;
 }
 
 .nav_ul {
@@ -1049,3 +1050,4 @@ hr {
         row-gap: 13rem;
     }
 }
+
