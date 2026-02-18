@@ -15,8 +15,23 @@
 </head>
 
 <body>
+
+    <div class="title_header_out_container">
+        <a href="index.html" class="title title_header_out">Velvet Voyages</a>
+    </div>
     <header class="header">
-        <a href="index.html" class="title">Velvet Voyages</a>
+
+        <!--    hamburger   -->
+        <div class="hamburger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </div>
+        <!--    hamburger   -->
+
+        <a href="index.html" class="title title_header_in">Velvet Voyages</a>
         <nav class="nav_primary">
             <ul class="nav_ul">
                 <li class="nav_li"><a href="#" class="nav_link">Destinations</a></li>
@@ -26,6 +41,7 @@
                         <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
+                    <img src="img/icons/arrow.svg" alt="arrow">
                     <ul class="tour_types_ul">
                         <li><a href="#">Adventure</a></li>
                         <li><a href="#">Honeymoon</a></li>
@@ -41,6 +57,13 @@
         </nav>
         <nav class="nav_utility">
             <button class="book_now">Book Now</button>
+
+            <!-- <select name="lang" id="lang">
+                <option value="en">EN</option>
+            </select> -->
+            <a href="login.html">
+                <button href="login.html" class="login_btn">Log In</button>
+            </a>
             <div class="search_container">
                 <button class="search_btn">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,12 +74,6 @@
                 </button>
                 <input class="search" type="search" placeholder="Search">
             </div>
-            <!-- <select name="lang" id="lang">
-                <option value="en">EN</option>
-            </select> -->
-            <a href="login.html">
-                <button href="login.html" class="login_btn">Log In</button>
-            </a>
         </nav>
     </header>
 
@@ -152,6 +169,7 @@
                         gave us moments we couldn't have planned ourselves—like a private dinner under a waterfall.
                         Seamless, romantic, and truly unforgettable."</p>
                     <h6>—Melinda L.</h6>
+                    <span>Honeymoon package</span>
                 </div>
             </div>
             <div class="testimonial john">
@@ -162,6 +180,7 @@
                         yet I felt completely safe with their expert guides. It wasn't just a tour; it was a total
                         adrenaline reset."</p>
                     <h6>—John T.</h6>
+                    <span>Adventure package</span>
                 </div>
             </div>
             <div class="testimonial rieze">
@@ -171,6 +190,7 @@
                         emails—just the sound of the forest and the most incredible stargazing I've ever seen. I came
                         home feeling like a new person."</p>
                     <h6>—Rieze R.</h6>
+                    <span>Lost-in-Nature Package</span>
                 </div>
             </div>
 
@@ -209,6 +229,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
